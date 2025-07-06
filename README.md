@@ -26,9 +26,7 @@ API REST construida con NestJS y Prisma ORM para gestionar usuarios y mensajes. 
 
 3. **Ejecuta prisma y el servidor**
     ```bash
-   git clone https://github.com/Andestid/API-NestJS-PrismaORM.git
    npm install
-   npm install class-validator class-transformer
    npx prisma generate
    npx prisma migrate dev --name init
    npm run start:dev
