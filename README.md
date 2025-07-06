@@ -25,7 +25,10 @@ API REST construida con NestJS y Prisma ORM para gestionar usuarios y mensajes. 
    DATABASE_URL="mysql://usuario:contraseña@localhost:3306/tu_basededatos"
 
 3. **Ejecuta prisma y el servidor**
+    ```bash
+   git clone https://github.com/Andestid/API-NestJS-PrismaORM.git
    npm install
+   npm install class-validator class-transformer
    npx prisma generate
    npx prisma migrate dev --name init
    npm run start:dev
@@ -44,12 +47,12 @@ API REST construida con NestJS y Prisma ORM para gestionar usuarios y mensajes. 
     Obtiene todos los mensajes de un usuario por su ID
 
 ##   💬 Mensajes
-  POST /messages
-  Crea un mensaje vinculado al usuario por su email
-  {
-    "email": "juan@example.com",
-    "content": "Hola mundo"
-  }
+     POST /messages
+     Crea un mensaje vinculado al usuario por su email
+     {
+       "email": "juan@example.com",
+       "content": "Hola mundo"
+     }
   
  ---
 
